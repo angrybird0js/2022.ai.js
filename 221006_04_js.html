@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<html>
+
+<head>
+    <title>tag test</title>
+    
+<!--   <link rel="stylesheet" href="styled.css"> 
+   인라인의 단점은 HTML 파일을 고쳐야 한다. -->
+    <style>
+/*        CSS의 주석문 cTRL + / 키 활용*/
+    body {
+  background-color: lightgrey;
+  color: blue;
+}
+
+h1 {
+  background-color: black;
+  color: white;
+    font-size: 64pt;
+/*    px em % 사용가능 */
+    
+}
+
+    </style>
+</head>
+
+
+
+
+<body>
+    <!-- headline Ctrl + / insert comment  -->
+    <h1>head1 Javascript </h1>
+    <h6>not head7</h6>
+    eye condition <br>
+
+   
+   go to homepage<br>
+    <a href="./example01.html"><img src="HTML5_logo_black.svg.png" width="15px"> example 01 index </a><br><br>
+
+    <br>
+
+
+
+    <br>
+    CSS Selectors <br>
+    <a href="https://code.tutsplus.com/ko/tutorials/the-30-css-selectors-you-must-memorize--net-16048">toutsplus</a><br>
+
+<pre>
+addEventListner()
+removeEventListener()
+attatchEvent()
+detachEvent()
+
+bind()
+unbind()
+delegate()
+undelegate()
+
+click()
+contextmenu
+dblclick
+mousedown
+mouseup
+mousemove
+mouseover
+mouseover
+mouseout
+mouseenter
+mouseleave
+
+submit()
+onsubmit()
+trigger(JQuery)
+
+getElementByID
+setAttribute
+setTimeout
+
+onload=
+onclick=
+
+preventDefault()
+
+.createElement()
+.createTextNode()
+.createTextNode
+.appendChild()
+
+
+
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
+    }
+  }
+}
+
+
+</pre>
+
+</body></html>

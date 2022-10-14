@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+    <html>
+        <head>
+            <title></title>
+                <style>
+     * { background-color: white; }
+        
+        
+        div.bk { background-color: beige; border: 1px solid red; }
+        div.in { background-color: #b5db99; border: 1px solid blue;}
+        
+        div.lineP {background-color: beige;}
+        
+/*                    p 선택자 검토 공백 쉼표 참고, 의도는 DOM 으로 접근해야*/
+                    div p.cls1 {color:red; }
+                    
+/*            @import         */
+        .cls1 {background-color: yellow;}
+        #idd1 {background-color: red;}
+    </style>
+        </head>
+        <body>
+<!-- headline          -->
+            <h1>head1 css selectors</h1>
+                
+            <div class="bk">
+            <div>block</div>
+            <div>block</div>
+            <div>block</div>
+            </div>
+            <br><br><br>
+            <div class="in">
+            <span>inline</span>
+            <span>inline</span>
+            <span>inline</span>
+            </div>
+            
+            <div>전체 선택후 </div>
+            <div class="lineP"> 이 라인에 적용 우선순위 확인 </div>
+            
+            
+            <div class = "cls1">
+                <div id="idd1">표시1</div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div>표시5</div>
+            </div>
+            
+<!--            복합 선택자 132p.-->
+       
+            <h1>복합 선택자</h1>
+            <div><p>child1</p><p>child2</p>
+                <div><p>grandson</p></div>
+                <p>neighbir</p>
+            </div>
+            
+            <H1>속성 선택자</H1>
+            <PRE>
+                
+                P[CLASS = "속성명 IPAGE"] {COLOR:BLUE}
+                ~= 공백 포함
+                ^= 처음글자
+                $= 마지막글자
+                *= 포함
+            </PRE>
+            
+            <H1>가상 선택자</H1>
+            신문 등 첫번째 글자<br>
+            ::<br>
+            
+            11장<br>
+            :active 클릭시<br>
+            :visited <br>
+            :disabled <br>
+            :hover <br>
+            :focus <br>
+            :first-child<br>
+            :last-child<br>
+            :nth-of-type(2n+1)<br>
+            :only-of-type<br>
+            
+            
+        
+        </body>
+    </html>
+    
+    

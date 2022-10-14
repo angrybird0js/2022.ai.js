@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+    <html>
+
+<head>
+    <title></title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Song+Myung&display=swap');
+
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 15;
+    }
+
+   p {
+        font-family: 'Song Myung', serif;
+        font-size: 32pt;
+    }
+    /*                 align-items:center;}*/
+
+    .bg1 {
+        border: 15px double black;
+        background-color: yellow;
+        width: 700px;
+        height: 200px;
+        padding: 10pt;
+
+
+        /*                margin-block-start:0.5em;
+                margin-block-end:0.5em;
+                margin-inline-start:0px;
+                margin-inline-end:0px;*/
+    }
+
+    .bg2 {
+        border: 15px double black;
+        width: 700px;
+        height: 200px;
+        background-color: lightgreen;
+        background-clip: padding-box;
+        padding: 10pt;
+    }
+
+
+    .bg3 {
+        border: 15px double black;
+        width: 700px;
+        height: 200px;
+        padding: 10pt;
+        background: linear-gradient(to bottom, magenta, red);
+    }
+
+
+</style>
+
+<body>
+    <!-- headline          -->
+    <h1>DVI tag</h1>
+
+
+    <dvi class="bg1">DVI1 이 영역은 서체와 글자크기자 적용되지 않는다.<br>
+        <p>마진 세팅할것 </p><br>
+        https://engkimbs.tistory.com/919 참고, 그러나 단순히 PADDING 으로 처리.<br>
+        
+    </dvi>
+    <dvi class="bg2"><p>DVI2</p></dvi>
+    <dvi class="bg3">
+       
+        <p style="color: white;"><span style="background-color: black;">DVI3</span> 서체 사이즈 세팅을 적용하기 위해서는 pt, em, px 등 단위를 표시해야 한다.</p>
+    </dvi>
+
+
+12장 transform <br>
+
+
+
+</body></html>

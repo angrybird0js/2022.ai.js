@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+    <html>
+        <head>
+            <title></title>
+            <style>
+            
+                stamp,p {margin: 0px; padding: 0px;}
+                
+                stamp { 
+                    float:left;
+                    font-size: 200%;
+                    background: black;
+                    color:white;
+                }
+                
+                p {
+                    width: 500px; text-align: justify;
+                    color: darkgreen;
+                }
+                
+                p:hover { color: yellow; background: black;}
+            
+                button {
+                    background-color: brown;
+                    border: 0px;
+                    border-radius: 10pt;
+                    height: 50px;
+                    width: 150px;
+                    font-size: 16pt;
+                    color: white;
+                    text-decoration: none;
+                    transition: 3s;
+                    
+                    
+                }
+                
+
+                
+                button:hover {
+                    background-color: blue;
+                    border: 0px;
+                    border-radius: 10pt;
+                    height: 50px;
+                    width: 150px;
+                    font-size: 16pt;
+                    color: white;
+                    text-decoration: underline;
+                    transition: 3s;
+                    
+                }
+                
+                div.flexi {
+                    width: 500px;
+                    height: 500px;
+                    background-color: azure;
+                    display: flex;
+                    
+                    justify-content: center;
+                    align-items: column;
+                    flex-basis: 20px;
+                    flex-wrap: nowrap;
+                    padding: 20px;
+                }
+                
+                div div:nth-child(3) {margin-top: auto;}
+                
+            </style>
+        </head>
+        <body>
+        
+            <BUTTON>Company</BUTTON>
+            <BUTTON>Product</BUTTON>
+            <BUTTON>Service</BUTTON>
+            <BUTTON>Community</BUTTON>
+        
+            <stamp>커피<BR />효능</stamp><p>카페인은 니코틴 알콜과 더불어 3대 영양소이다 ? O / X </p>
+            <p>단일 tag에 / 를 부가하면 편집기의 틀린구문 강조 문제를 해결할 수 있다.</p>
+            
+            <div class="flexi">
+                <div>flex1</div>
+                <div>flex2</div>
+               <div>flex3</div>
+                <div>flex4</div>
+                <div>flex5</div>
+            </div>
+            
+            
+        </body>
+    </html>

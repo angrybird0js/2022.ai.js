@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+    <html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <h1> FORM </h1>
+
+    <h2>LogIN</h2>
+    <form action="https://www.floodgap.com/">
+        <label>ID</label>
+        <input type="text">
+        <label>Password</label>
+        <input type="password">
+        <input type="submit">
+    </form>
+
+    <h2>Member Register</h2>
+    <form action="https://www.floodgap.com/">
+        <label>Name</label>&Tab;&Tab;&#9; <input type="text" pattern="[가-힣]{3}|[가-힣]{2}"><br>
+        <label>Phone</label>&Tab;&Tab; <input type="tel" pattern="[0-9]{10}"><br>
+        <!--            number 대신, 정규표현식 패턴 정의 -->
+        <label>Address</label>&Tab;&Tab; <input type="text" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"><br>
+        <!--            ^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$ ,, ^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$  -->
+        <label>Greeting</label>&Tab;&Tab; <textarea></textarea><br>
+        <label>Submit date</label>&Tab;&Tab; <input type="date"><br>
+        <br>
+        <!--입력필수항목 없음-->
+        <input type="submit"><br>
+    </form>
+
+
+    <h2>LogIN_work</h2>
+    <form action="https://www.floodgap.com/">
+
+        <!--img-->
+        <label>ID</label><br>
+        <input type="text" pattern="[가-힣]{3}|[가-힣]{2};"><br>
+        <label>Password</label><br>
+        <input type="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&]{8,}"> <br>
+        <label>I'm not a robot</label><br>
+        <input type="button"><br>
+        <input type="submit"><br>
+    </form>
+
+
+    <form action="">
+        <button type="button submit reset"></button>
+    </form>
+
+
+   
+<!-- 2022.10.11. 화 
+   임효성, 비전공자를 위한 첫 코딩 챌린지, Golden Rabbit 087p.-->
+   
+    <form action="./221006_01_index.html">
+        <label>First Name</label>
+        <input id="fname" name="fnm" type="text"><br>
+        <label>Last Name</label>
+        <input id="lname" name="lnm" type="text"><br>
+        <button type="button submit reset">제출버튼 클릭시 인덱스로 갑니다</button>
+    </form>
+    
+<!--    97p.-->
+    
+    </html>
